@@ -1,0 +1,131 @@
+* {
+  color: #000000;
+  font-family: sans-serif;
+  color: #3B3C40;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 80%;
+}
+
+header nav {
+  display: flex;
+  padding: .75rem 0;
+}
+
+nav a {
+  padding-left: 1em;
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.global/26868fbe-1af0-4689-92f8-b1c3ff159816/Yucca.jpeg?v=1664150251051");
+  position: relative;
+  height: 75vh;
+  width: 100vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+p, ul, ol{
+  margin: 2rem 0;
+}
+
+.hero-text p{
+  text-transform: uppercase;
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.75rem);
+}
+
+.title {
+  color: #63B0F2;
+  font-family: Courier New, monospace;
+  font-weight: bold;
+  font-size: clamp(4rem, 15vw, 10rem);
+
+  line-height: 90%;
+  margin: 0;
+}
+
+article{
+  margin: 3rem 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'courier new', monospace;
+}
+h2 {
+  color: #5792E2;
+  font-size: 1.5rem;
+  font-family: 'courier new', monospace;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+li {
+  list-style-position: inside;
+}
+
+article p.author{
+  margin: 2rem 0;
+  color: #7B838C;
+}
+
+footer {
+  width: 100%;
+  height: 2.5rem;
+  background: #5792E2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+img {
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+footer a {
+  color: white;
+  font-family: 'courier new', monospace;
+  font-weight: 800;
+  font-size: .75rem;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
