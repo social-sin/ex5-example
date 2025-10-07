@@ -1,131 +1,137 @@
+/* Global Reset & Base Styles */
 * {
-  color: #000000;
-  font-family: sans-serif;
-  color: #3B3C40;
-  font-size: 16px;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  color: #3b3c40;
+  font-size: 16px;
 }
 
 html {
-  position: relative;
   min-height: 100vh;
+  position: relative;
 }
 
+body {
+  line-height: 1.5;
+}
+
+/* Header and Navigation */
 header {
-  font-size: 80%;
+  font-size: 0.8rem;
 }
 
 header nav {
   display: flex;
-  padding: .75rem 0;
+  gap: 1em;
+  padding: 0.75rem 0;
 }
 
 nav a {
-  padding-left: 1em;
+  text-decoration: none;
+  color: #3b3c40;
 }
 
-main {
-  padding-bottom: 3rem;
-}
-
+/* Hero Section */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.global/26868fbe-1af0-4689-92f8-b1c3ff159816/Yucca.jpeg?v=1664150251051");
-  position: relative;
-  height: 75vh;
-  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.global/26868fbe-1af0-4689-92f8-b1c3ff159816/Yucca.jpeg?v=1664150251051");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+  position: relative;
 }
 
 .hero-text {
   text-align: center;
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
 }
 
-p, ul, ol{
-  margin: 2rem 0;
-}
-
-.hero-text p{
+.hero-text p {
   text-transform: uppercase;
   color: white;
   font-size: clamp(1rem, 2vw, 1.75rem);
 }
 
 .title {
-  color: #63B0F2;
-  font-family: Courier New, monospace;
+  color: #63b0f2;
+  font-family: "Courier New", monospace;
   font-weight: bold;
   font-size: clamp(4rem, 15vw, 10rem);
-
-  line-height: 90%;
-  margin: 0;
+  line-height: 0.9;
 }
 
-article{
-  margin: 3rem 5rem;
-}
-
+/* Typography */
 h1 {
   font-size: 3rem;
-  font-family: 'courier new', monospace;
+  font-family: "Courier New", monospace;
 }
+
 h2 {
-  color: #5792E2;
+  color: #5792e2;
   font-size: 1.5rem;
-  font-family: 'courier new', monospace;
+  font-family: "Courier New", monospace;
 }
 
 h3 {
   font-size: 1.2rem;
 }
 
+p,
+ul,
+ol {
+  margin: 2rem 0;
+}
+
 li {
   list-style-position: inside;
 }
 
-article p.author{
-  margin: 2rem 0;
-  color: #7B838C;
+/* Articles */
+article {
+  margin: 3rem 5rem;
 }
 
+/* Footer */
 footer {
   width: 100%;
   height: 2.5rem;
-  background: #5792E2;
+  background: #5792e2;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
 }
 
-img {
-  max-width: 100vw;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
 footer a {
   color: white;
-  font-family: 'courier new', monospace;
+  font-family: "Courier New", monospace;
   font-weight: 800;
-  font-size: .75rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   padding: 1em;
 }
 
 footer a:hover {
   text-decoration: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
